@@ -7,6 +7,7 @@ export default function CardsPage() {
       <div className="flex flex-col items-center text-2xl mt-10">
         <Link href="/cards/qr-code">QR Code</Link>
         <Link href="/cards/social-links">Social Links</Link>
+        <Link href="/cards/blog-preview">Blog Preview</Link>
       </div>
     </div>
   );
