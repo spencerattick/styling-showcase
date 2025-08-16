@@ -22,7 +22,7 @@ export default function BlogPreview() {
           These languages are the backbone fo every website, defining structure,
           content, and presentation.
         </p>
-        <div className="md:mt-10 mt-5 flex items-center justify-start gap-2">
+        <div className="mt-auto flex items-center justify-start gap-2">
           <Image src={avatar} width={30} height={30} alt="avatar"></Image>
           <h3 className="text-sm font-bold">Greg Hooper</h3>
         </div>
