@@ -1,6 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function FAQ() {
+  const [isOpenIndex, setIsOpenIndex] = useState<number | null>(null);
+
+  const handleIconClick = (index: number | null) => {
+    setIsOpenIndex(index)
+  };
+
   const content = [
     {
       question: "What is Frontend Mentor, and how will it help me?",
@@ -37,12 +46,12 @@ export default function FAQ() {
               height={30}
               width={30}
               alt="star icon"
-              className=""
             />
             <h1 className="text-4xl font-[1000] text-[#2f1632]">FAQs</h1>
           </div>
           <div>
             {content.map((item, index) => {
+              const isOpen = isOpenIndex === index;
               return (
                 <div key={index}>
                   <div className="flex items-center gap-2">
@@ -54,10 +63,18 @@ export default function FAQ() {
                       alt="plus icon"
                       height={30}
                       width={30}
+                      className="cursor-pointer"
+                      onClick={() => handleIconClick(index)}
                     ></Image>
                   </div>
 
-                  <p className="text-[#b1a6b2]">{item.answer}</p>
+                  <p
+                    className={`text-[#b1a6b2] ${
+                      isOpen ? "visible" : "hidden"
+                    }`}
+                  >
+                    {item.answer}
+                  </p>
                 </div>
               );
             })}
