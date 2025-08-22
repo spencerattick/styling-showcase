@@ -45,9 +45,18 @@ export default function FAQ() {
             {content.map((item, index) => {
               return (
                 <div key={index}>
-                  <h3 className="text-[#2f1632] font-semibold mb-2">
-                    {item.question}
-                  </h3>
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-[#2f1632] font-semibold mb-2">
+                      {item.question}
+                    </h3>
+                    <Image
+                      src="/icon-plus.svg"
+                      alt="plus icon"
+                      height={30}
+                      width={30}
+                    ></Image>
+                  </div>
+
                   <p className="text-[#b1a6b2]">{item.answer}</p>
                 </div>
               );
