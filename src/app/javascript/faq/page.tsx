@@ -45,7 +45,7 @@ export default function FAQ() {
 
       <div className="h-[60vh] bg-[#f9f0ff]" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl p-6">
-        <div className="bg-white rounded-lg shadow-lg p-8 h-[50vh]">
+        <div className="bg-white rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
           <div className="flex gap-4 mb-5">
             <Image
               src="/icon-star.svg"
@@ -53,7 +53,7 @@ export default function FAQ() {
               width={30}
               alt="star icon"
             />
-            <h1 className="text-4xl font-[1000] text-[#2f1632]">FAQs</h1>
+            <h1 className="text-5xl font-black text-[#2f1632]">FAQs</h1>
           </div>
           <div>
             {content.map((item, index) => {
@@ -86,10 +86,10 @@ export default function FAQ() {
                   </div>
                   <div
                     className={`
-                  transition-all duration-600 ease-in-out
+                  transition-all duration-600
                   ${
                     isOpen
-                      ? "max-h-96 opacity-100 mb-2"
+                      ? "max-h-96 opacity-100 mb-5 mt-5"
                       : "max-h-0 opacity-0 overflow-hidden"
                   }
                 `}
