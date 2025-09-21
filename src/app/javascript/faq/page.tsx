@@ -7,7 +7,7 @@ export default function FAQ() {
   const [isOpenIndex, setIsOpenIndex] = useState<number | null>(null);
 
   const handleIconClick = (index: number | null) => {
-    setIsOpenIndex(index)
+    setIsOpenIndex(index);
   };
 
   const content = [
@@ -33,6 +33,7 @@ export default function FAQ() {
         "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.",
     },
   ];
+  
   return (
     <div className="relative min-h-screen">
       <div className="h-[35vh] bg-[url('/background-pattern-desktop.svg')]" />
@@ -58,14 +59,25 @@ export default function FAQ() {
                     <h3 className="text-[#2f1632] font-semibold mb-2">
                       {item.question}
                     </h3>
-                    <Image
-                      src="/icon-plus.svg"
-                      alt="plus icon"
-                      height={30}
-                      width={30}
-                      className="cursor-pointer"
-                      onClick={() => handleIconClick(index)}
-                    ></Image>
+                    {isOpen ? (
+                      <Image
+                        src="/icon-minus.svg"
+                        alt="plus icon"
+                        height={30}
+                        width={30}
+                        className="cursor-pointer"
+                        onClick={() => handleIconClick(index)}
+                      ></Image>
+                    ) : (
+                      <Image
+                        src="/icon-plus.svg"
+                        alt="plus icon"
+                        height={30}
+                        width={30}
+                        className="cursor-pointer"
+                        onClick={() => handleIconClick(index)}
+                      ></Image>
+                    )}
                   </div>
 
                   <p
