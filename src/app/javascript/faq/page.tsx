@@ -20,25 +20,24 @@ const content = [
       "Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!",
   },
   {
-    question:
-      "How can I get help if I'm stuck on a Frontend Mentor challenge?",
+    question: "How can I get help if I'm stuck on a Frontend Mentor challenge?",
     answer:
       "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.",
   },
 ];
 
 export default function FAQ() {
-  const [openStates, setOpenStates] = useState<boolean[]>(Array(content.length).fill(false));
-
+  const [openStates, setOpenStates] = useState<boolean[]>(
+    Array(content.length).fill(false)
+  );
 
   const handleIconClick = (index: number) => {
-    setOpenStates(prev => {
+    setOpenStates((prev) => {
       const newStates = [...prev];
       newStates[index] = !newStates[index];
       return newStates;
-    })
+    });
   };
-
 
   return (
     <div className="relative min-h-screen">
@@ -85,14 +84,24 @@ export default function FAQ() {
                       ></Image>
                     )}
                   </div>
-
-                  <p
-                    className={`text-[#b1a6b2] ${
-                      isOpen ? "visible" : "hidden"
-                    }`}
+                  <div
+                    className={`
+                  transition-all duration-600 ease-in-out
+                  ${
+                    isOpen
+                      ? "max-h-96 opacity-100 mb-2"
+                      : "max-h-0 opacity-0 overflow-hidden"
+                  }
+                `}
                   >
-                    {item.answer}
-                  </p>
+                    <p
+                      className={`text-[#b1a6b2] ${
+                        isOpen ? "visible" : "hidden"
+                      }`}
+                    >
+                      {item.answer}
+                    </p>
+                  </div>
                 </div>
               );
             })}
