@@ -1,7 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-export default function RatingCard({ handleRating, rating }) {
+interface RatingCardProps {
+  handleRating: (num: number) => void;
+  rating: number | null;
+  handleSumbit: () => void;
+}
+
+export default function RatingCard({
+  handleRating,
+  rating,
+  handleSumbit,
+}: RatingCardProps) {
   const ratingNums = [1, 2, 3, 4, 5];
   return (
     <div className="bg-[#202630] w-[23vw] h-[40vh] rounded-3xl p-8">
@@ -31,7 +41,10 @@ export default function RatingCard({ handleRating, rating }) {
           </button>
         ))}
       </div>
-      <button className="bg-[#fd7612] hover:bg-white text-[#1b212b] w-full mt-5 py-3 text-xs font-semibold tracking-[.15em] rounded-full">
+      <button
+        className="bg-[#fd7612] hover:bg-white text-[#1b212b] w-full mt-5 py-3 text-xs font-semibold tracking-[.15em] rounded-full"
+        onClick={handleSumbit}
+      >
         SUBMIT
       </button>
     </div>
