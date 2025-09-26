@@ -1,7 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Rating() {
   const ratingNums = [1, 2, 3, 4, 5];
+
+  const [rating, setRating] = useState<number | null>(null);
+
+  const handleRating = (num: number) => {
+    setRating(num);
+    console.log("Selected rating:", rating);
+  };
 
   return (
     <div className="flex items-center justify-center h-[100vh] w-[100vw]">
@@ -21,10 +31,18 @@ export default function Rating() {
         </p>
         <div className="flex justify-around gap-5">
           {ratingNums.map((num) => (
-              <button className="bg-[#282e38] rounded-full flex items-center justify-center h-10 w-10 text-center text-[#8b939f] mt-5 mb-5" key={num}>{num}</button>
+            <button
+              className={`${rating === num ? "bg-white" : "bg-[#282e38] hover:bg-[#fd7612]"} rounded-full flex items-center justify-center h-10 w-10 text-center text-[#8b939f] mt-5 mb-5  hover:text-[#1b212b]`}
+              key={num}
+              onClick={() => handleRating(num)}
+            >
+              {num}
+            </button>
           ))}
         </div>
-        <button className="bg-[#fd7612] text-[#1b212b] w-full mt-5 py-3 text-xs font-semibold tracking-[.15em] rounded-full">SUBMIT</button>
+        <button className="bg-[#fd7612] hover:bg-white text-[#1b212b] w-full mt-5 py-3 text-xs font-semibold tracking-[.15em] rounded-full">
+          SUBMIT
+        </button>
       </div>
     </div>
   );
