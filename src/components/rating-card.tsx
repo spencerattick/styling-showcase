@@ -14,7 +14,7 @@ export default function RatingCard({
 }: RatingCardProps) {
   const ratingNums = [1, 2, 3, 4, 5];
   return (
-    <div className="bg-[#202630] w-[23vw] h-[40vh] rounded-3xl p-8">
+    <div className="bg-[#202630] xl:mx-[650px] lg:mx-96 md:mx-70 sm:mx-30 rounded-3xl p-8 mx-10">
       <Image
         src="/icon-star-rating.svg"
         width={50}

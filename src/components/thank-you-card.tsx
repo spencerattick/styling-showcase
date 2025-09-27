@@ -7,7 +7,7 @@ type ThankYouCardProps = {
 
 export default function ThankYouCard({ rating }: ThankYouCardProps) {
   return (
-    <div className="bg-[#202630] w-[23vw] h-[40vh] rounded-3xl p-8 flex flex-col items-center justify-center gap-6">
+    <div className="bg-[#202630] xl:mx-[650px] lg:mx-96 md:mx-70 sm:mx-30 mx-10 rounded-3xl p-8 flex flex-col items-center justify-center gap-6">
       <Image
         src="/illustration-thank-you.svg"
         height={120}
