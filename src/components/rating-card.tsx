@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-interface RatingCardProps {
+type RatingCardProps = {
   handleRating: (num: number) => void;
   rating: number | null;
   handleSumbit: () => void;

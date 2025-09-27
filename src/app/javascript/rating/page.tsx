@@ -22,7 +22,7 @@ export default function Rating() {
   return (
     <div className="flex items-center justify-center h-[100vh] w-[100vw]">
       {submitted ? (
-        <ThankYouCard />
+        <ThankYouCard rating={rating}/>
       ) : (
         <RatingCard
           handleRating={handleRating}
