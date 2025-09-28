@@ -22,18 +22,10 @@ export default function Home() {
           Spencer Attick
         </h2>
         <div className="mt-10 flex gap-4 justify-center items-center">
-          <Button
-            variant="outline"
-            size="lg"
-            className="text-white/95 border-white/80 hover:bg-white/20 hover:border-white hover:text-white backdrop-blur-lg"
-          >
+          <Button variant="outline" size="lg">
             <Link href="/cards">Cards</Link>
           </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="text-white/95 border-white/80 hover:bg-white/20 hover:border-white hover:text-white backdrop-blur-lg"
-          >
+          <Button variant="outline" size="lg">
             <Link href="/javascript">Designs with JavaScript</Link>
           </Button>
         </div>
