@@ -17,7 +17,7 @@ export default function ThankYouCard({ rating }: ThankYouCardProps) {
       <div className="bg-[#262e38] p-3 text-[#fd7612] rounded-full text-xs">
         You selected {rating} out of 5.
       </div>
-      <h1 className="font-bold text-2xl">Thank you!</h1>
+      <h1 className="font-bold text-2xl text-white">Thank you!</h1>
       <p className="text-[#808690] text-center">
         We appreciate you taking the time to give a rating. If you ever need
         more support, don`t hesitate to get in touch!

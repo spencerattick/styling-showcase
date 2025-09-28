@@ -20,7 +20,7 @@ export default function Rating() {
   };
 
   return (
-    <div className="flex items-center justify-center h-[100vh] w-[100vw]">
+    <div className="flex items-center justify-center h-[100vh] w-[100vw] bg-black">
       {submitted ? (
         <ThankYouCard rating={rating}/>
       ) : (

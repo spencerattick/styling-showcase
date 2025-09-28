@@ -23,7 +23,7 @@ export default function RatingCard({
         className="bg-[#282e38] p-4 rounded-full"
       />
 
-      <h1 className="font-bold text-2xl my-5">How did we do?</h1>
+      <h1 className="font-bold text-2xl my-5 text-white">How did we do?</h1>
       <p className="text-[#6c727c] text-[15px]">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
