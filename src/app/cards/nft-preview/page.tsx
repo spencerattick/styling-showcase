@@ -10,10 +10,10 @@ export default function NFTPreviewCard() {
           alt="glass cube balancing on one corner"
           height={300}
           width={300}
-          className="rounded-2xl"
+          className="rounded-2xl relative hover:opacity-70 cursor-pointer"
         />
         <div className="flex flex-col gap-4 mt-5 w-full">
-          <h1 className="text-white text-xl font-semibold">
+          <h1 className="text-white text-xl font-semibold hover:text-[#1edcdc] cursor-pointer">
             Equilibrium #3429
           </h1>
           <p className="text-[#6e85a7]">
@@ -49,7 +49,7 @@ export default function NFTPreviewCard() {
                 className="border border-white rounded-full inline-block mr-4"
               />
               Creation of
-              <span className="text-[#c0cada] ml-1"> Jules Wyvern</span>
+              <span className="text-[#c0cada] ml-1 hover:text-[#1edcdc] cursor-pointer"> Jules Wyvern</span>
             </p>
           </div>
         </div>
