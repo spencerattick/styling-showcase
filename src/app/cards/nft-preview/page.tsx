@@ -4,7 +4,9 @@ import React from "react";
 export default function NFTPreviewCard() {
   return (
     <div className="bg-[#0c192d] w-[100vw] h-[100vh] flex justify-center items-center">
-      <div className="bg-[#15263f] w-[20%] h-[60%] rounded-2xl p-5 flex flex-col items-center">
+      <div className="bg-[#15263f] xl:w-[20%] lg:w-[30%] md:w-[40%] sm:w-[50%] xs:w-[80%] xs:mx-3 rounded-2xl p-5 flex flex-col items-center">
+      {/* <div className="bg-[#15263f] rounded-2xl p-5 flex flex-col items-center"> */}
+
         <div className="group">
           <Image
             src="/image-equilibrium.jpg"
