@@ -5,13 +5,23 @@ export default function NFTPreviewCard() {
   return (
     <div className="bg-[#0c192d] w-[100vw] h-[100vh] flex justify-center items-center">
       <div className="bg-[#15263f] w-[20%] h-[60%] rounded-2xl p-5 flex flex-col items-center">
-        <Image
-          src="/image-equilibrium.jpg"
-          alt="glass cube balancing on one corner"
-          height={300}
-          width={300}
-          className="rounded-2xl relative hover:opacity-70 cursor-pointer"
-        />
+        <div className="group">
+          <Image
+            src="/image-equilibrium.jpg"
+            alt="glass cube balancing on one corner"
+            height={300}
+            width={300}
+            className="transition-all duration-200 rounded-2xl relative hover:opacity-80 cursor-pointer hover:hue-rotate-320"
+          />
+          <Image
+            className="transition-all duration-200 absolute top-85 right-211 opacity-0 group-hover:opacity-100"
+            src="/icon-view.svg"
+            alt="eye icon"
+            width={40}
+            height={40}
+          />
+        </div>
+
         <div className="flex flex-col gap-4 mt-5 w-full">
           <h1 className="text-white text-xl font-semibold hover:text-[#1edcdc] cursor-pointer">
             Equilibrium #3429
@@ -49,7 +59,10 @@ export default function NFTPreviewCard() {
                 className="border border-white rounded-full inline-block mr-4"
               />
               Creation of
-              <span className="text-[#c0cada] ml-1 hover:text-[#1edcdc] cursor-pointer"> Jules Wyvern</span>
+              <span className="text-[#c0cada] ml-1 hover:text-[#1edcdc] cursor-pointer">
+                {" "}
+                Jules Wyvern
+              </span>
             </p>
           </div>
         </div>
