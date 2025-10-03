@@ -3,25 +3,25 @@ import React from "react";
 
 export default function NFTPreviewCard() {
   return (
-    <div className="bg-[#0c192d] w-[100vw] h-[100vh] flex justify-center items-center">
-      <div className="bg-[#15263f] xl:w-[20%] lg:w-[30%] md:w-[40%] sm:w-[50%] xs:w-[80%] xs:mx-3 rounded-2xl p-5 flex flex-col items-center">
-      {/* <div className="bg-[#15263f] rounded-2xl p-5 flex flex-col items-center"> */}
-
-        <div className="group">
+    <div className="bg-[#0c192d] min-h-screen flex justify-center items-center">
+      <div className="bg-[#15263f] rounded-2xl p-5 flex flex-col items-center">
+        <div className="relative rounded-xl overflow-hidden mb-6 cursor-pointer group">
           <Image
             src="/image-equilibrium.jpg"
-            alt="glass cube balancing on one corner"
+            alt="clear glass cube balancing on one corner"
             height={300}
             width={300}
-            className="transition-all duration-200 rounded-2xl relative hover:opacity-80 cursor-pointer hover:hue-rotate-320"
+            className="transition-all duration-200 group-hover:opacity-80"
           />
-          <Image
-            className="transition-all duration-200 absolute top-85 right-211 opacity-0 group-hover:opacity-100"
-            src="/icon-view.svg"
-            alt="eye icon"
-            width={40}
-            height={40}
-          />
+          <div className="bg-[#1edcdc] opacity-0 inset-0 group-hover:opacity-30 absolute flex justify-center items-center transition-all duration-300">
+            <Image
+              className="group-hover:opacity-100"
+              src="/icon-view.svg"
+              alt="eye icon"
+              width={40}
+              height={40}
+            />
+          </div>
         </div>
 
         <div className="flex flex-col gap-4 mt-5 w-full">
