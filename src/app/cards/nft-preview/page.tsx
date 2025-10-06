@@ -13,9 +13,8 @@ export default function NFTPreviewCard() {
             width={300}
             className="transition-all duration-200 group-hover:opacity-80"
           />
-          <div className="bg-[#1edcdc] opacity-0 inset-0 group-hover:opacity-30 absolute flex justify-center items-center transition-all duration-300">
+          <div className="bg-[#1edcdc]/50 hidden inset-0 group-hover:flex justify-center items-center transition-all duration-300">
             <Image
-              className="group-hover:opacity-100"
               src="/icon-view.svg"
               alt="eye icon"
               width={40}
