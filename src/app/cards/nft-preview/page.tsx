@@ -4,7 +4,7 @@ import React from "react";
 export default function NFTPreviewCard() {
   return (
     <div className="bg-[#0c192d] min-h-screen flex justify-center items-center">
-      <div className="bg-[#15263f] rounded-2xl p-5 flex flex-col items-center">
+      <div className="bg-[#15263f] rounded-2xl p-5 flex flex-col items-center lg:mx-90 md:mx-60 sm:mx-50 xs:mx-10">
         <div className="relative rounded-xl overflow-hidden mb-6 cursor-pointer group">
           <Image
             src="/image-equilibrium.jpg"
@@ -13,10 +13,8 @@ export default function NFTPreviewCard() {
             width={300}
             className="transition-all duration-200 group-hover:opacity-80"
           />
-          {/* <div className="bg-[#1edcdc]/50 hidden inset-0 group-hover:flex absolute justify-center items-center transition-all duration-300"> */}
           <div className="bg-[#1edcdc]/50 flex inset-0 absolute justify-center items-center transition-all duration-300 opacity-0 group-hover:opacity-100">
             <Image
-              // className="group-hover:opacity-100"
               src="/icon-view.svg"
               alt="eye icon"
               width={40}
