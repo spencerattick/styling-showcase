@@ -3,14 +3,17 @@ import Image from "next/image";
 export default function OrderSummary() {
   return (
     <div className="min-h-screen bg-[url(/pattern-background-desktop.svg)] bg-no-repeat flex justify-center items-center bg-[#dfe8ff]">
-      <div className="bg-white rounded-xl shadow-xl mx-60">
-        <Image
-          src="/illustration-hero.svg"
-          width={400}
-          height={100}
-          alt="illustration of a person listening to music and dancing"
-          className="rounded-t-xl"
-        />
+      <div className="bg-white rounded-xl shadow-xl max-w-sm">
+
+        <div className="relative w-full h-48">
+          <Image
+            src="/illustration-hero.svg"
+            fill
+            alt="illustration of a person listening to music and dancing"
+            className="rounded-t-xl object-cover"
+          />
+        </div>
+
         <div className="flex flex-col gap-4 items-center text-center p-5">
           <h1 className="font-black text-2xl">Order Summary</h1>
           <p className="text-[#7e849d] text-sm px-10">
