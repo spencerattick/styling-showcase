@@ -28,7 +28,7 @@ export default function CardsPage() {
     {
       name: "Order Summary",
       link: "/cards/order-summary",
-      previewImage: "/preview/order.png",
+      previewImage: "/preview/order-summary.png",
     },
   ];
   return (
@@ -57,7 +57,7 @@ export default function CardsPage() {
             className="flex flex-col items-center gap-2 font-semibold "
           >
             {card.name}
-            <div className="shadow-xl shadow-white/20 rounded-lg">
+            <div className="shadow-xl rounded-lg">
               <Image
                 src={card.previewImage}
                 width={200}
