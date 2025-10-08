@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OrderSummary() {
   return (
-    <div className="min-h-screen bg-[#d6e1ff] flex justify-center items-center">
+    <div className="min-h-screen bg-[url(/pattern-background-desktop.svg)] bg-no-repeat flex justify-center items-center bg-[#dfe8ff]">
       <div className="bg-white rounded-xl shadow-xl mx-60">
         <Image
           src="/illustration-hero.svg"
