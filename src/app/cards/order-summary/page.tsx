@@ -29,14 +29,16 @@ export default function OrderSummary() {
               <h2 className="font-bold">Annual Plan</h2>
               <p className="text-[#7e849d]">$59.99/year</p>
             </div>
-            <p className="ml-9 underline text-sm cursor-pointer text-[#382ae1] font-semibold">
+            <p className="ml-9 underline text-sm cursor-pointer text-[#382ae1] font-semibold hover:text-[#766cf1] transition-all duration-300">
               Change
             </p>
           </div>
-          <button className="bg-[#382ae1] text-white rounded-xl font-semibold px-16 py-3 shadow-xl text-sm">
+          <button className="bg-[#382ae1] text-white rounded-xl font-semibold px-16 py-3 shadow-xl text-sm cursor-pointer hover:bg-[#766cf1] transition-all duration-300">
             Proceed to Payment
           </button>
-          <p className="text-sm text-[#7e849d] font-semibold">Cancel Order</p>
+          <p className="text-sm text-[#7e849d] font-semibold cursor-pointer hover:text-black transition-all duration-300">
+            Cancel Order
+          </p>
         </div>
       </div>
     </div>
