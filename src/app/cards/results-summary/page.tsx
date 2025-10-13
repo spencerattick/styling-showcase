@@ -34,9 +34,9 @@ export default function ResultsSummary() {
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-[#edf2ff]">
       <div className="flex w-full max-w-lg rounded-2xl  bg-white shadow-lg">
-        <div className="min-h-full max-w-[50%] rounded-2xl flex flex-col gap-4 items-center text-center bg-linear-to-tr from-[#322deb] to-[#6742ff] p-2 text-white">
-          <h3 className="mb-3 text-[#ccc6ff]">Your Result</h3>
-          <div className="bg-[#4a26d0] p-8 rounded-full">
+        <div className="min-h-full max-w-[50%] rounded-2xl flex flex-col gap-6 items-center text-center bg-linear-to-tr from-[#322deb] to-[#6742ff] p-2 text-white">
+          <h3 className=" text-[#ccc6ff] font-semibold mt-4">Your Result</h3>
+          <div className="bg-linear-to-t from-[#4734ee] to-[#4d24cb] p-8 w-32 h-32 rounded-full">
             <h1 className=" text-4xl font-bold">76</h1>
             <p className="text-xs text-[#ccc6ff]">of 100</p>
           </div>
@@ -67,7 +67,9 @@ export default function ResultsSummary() {
               </li>
             ))}
           </ul>
-          <button className="bg-[#313a55] p-3 rounded-full text-white text-sm font-semibold">Continue</button>
+          <button className="bg-[#313a55] p-3 rounded-full text-white text-sm font-semibold hover:bg-[#494f7c] transition-all duration-300">
+            Continue
+          </button>
         </div>
       </div>
     </div>
