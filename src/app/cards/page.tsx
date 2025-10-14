@@ -30,6 +30,11 @@ export default function CardsPage() {
       link: "/cards/order-summary",
       previewImage: "/preview/order-summary.png",
     },
+    {
+      name: "Results Summary",
+      link: "/cards/results-summary",
+      previewImage: "/preview/results-summary.png",
+    }
   ];
   return (
     <div className="min-h-screen bg-black pb-20 text-center">
