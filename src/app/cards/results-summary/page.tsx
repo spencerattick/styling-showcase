@@ -67,7 +67,7 @@ export default function ResultsSummary() {
               </li>
             ))}
           </ul>
-          <button className="bg-[#313a55] p-3 rounded-full text-white text-sm font-semibold hover:bg-[#494f7c] transition-all duration-300">
+          <button className="bg-[#313a55] p-3 rounded-full text-white text-sm font-semibold hover:bg-linear-to-tr from-[#322deb] to-[#6742ff] transition-all duration-300">
             Continue
           </button>
         </div>
