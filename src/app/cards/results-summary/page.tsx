@@ -33,8 +33,8 @@ export default function ResultsSummary() {
   ];
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-[#edf2ff]">
-      <div className="flex w-full max-w-lg rounded-2xl  bg-white shadow-lg">
-        <div className="min-h-full max-w-[50%] rounded-2xl flex flex-col gap-6 items-center text-center bg-linear-to-tr from-[#322deb] to-[#6742ff] p-2 text-white">
+      <div className="flex flex-col lg:flex-row w-full lg:max-w-xl max-w-sm rounded-2xl  bg-white shadow-lg">
+        <div className="min-h-full lg:max-w-[50%] max-w-full rounded-2xl flex flex-col gap-6 items-center text-center bg-linear-to-tr from-[#322deb] to-[#6742ff] p-2 text-white">
           <h3 className=" text-[#ccc6ff] font-semibold mt-4">Your Result</h3>
           <div className="bg-linear-to-t from-[#4734ee] to-[#4d24cb] p-8 w-32 h-32 rounded-full">
             <h1 className=" text-4xl font-bold">76</h1>
