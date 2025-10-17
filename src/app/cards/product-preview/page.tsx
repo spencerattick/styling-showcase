@@ -2,17 +2,18 @@ import Image from "next/image";
 
 export default function ProductPreview() {
   return (
-    <div className="flex justify-center items-center w-screen h-screen">
-      <div className="max-w-sm lg:max-w-lg">
+    <div className="flex justify-center items-center w-screen h-screen bg-[#f3ebe3]">
+      <div className="max-w-md lg:max-w-lg bg-white rounded-lg flex justify-center items-center gap-y-5">
         <Image
           src="/image-product-desktop.jpg"
           alt="perfume bottle"
-          width={50}
-          height={50}
+          width={200}
+          height={200}
+          className="rounded-l-lg w-[50%]"
         />
-        <div>
-          <h2>PERFUME</h2>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
+        <div className="mx-5 flex flex-col gap-2">
+          <h2 className="text-[0.5rem] tracking-widest text-[#979a9f]">PERFUME</h2>
+          <h1 className="font-bold text-xl/5 tracking-tight">Gabrielle Essence Eau De Parfum</h1>
           <p>
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
