@@ -18,11 +18,11 @@ export default function ProductPreview() {
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <div>
-            <h1>$149.99</h1>
-            <p>$169.99</p>
+          <div className="flex gap-5 items-center">
+            <h1 className="text-[#3f8169] text-2xl font-bold">$149.99</h1>
+            <p className="line-through">$169.99</p>
           </div>
-          <button>
+          <button className="bg-[#3f8169] text-white flex justify-center items-center gap-3 py-2 rounded-md">
             <Image src='/icon-cart.svg' alt='cart icon' width={20} height={20}/>
             <span>Add to Cart</span>
           </button>
