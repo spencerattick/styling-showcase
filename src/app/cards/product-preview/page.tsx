@@ -1,8 +1,23 @@
 import Image from "next/image";
+import { Montserrat, Fraunces } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-montserrat",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-fraunces",
+});
 
 export default function ProductPreview() {
   return (
-    <div className="flex justify-center items-center w-screen h-screen bg-[#f3ebe3]">
+    <div
+      className='flex justify-center items-center w-screen h-screen bg-[#f3ebe3]'
+    >
       <div className="max-w-md lg:max-w-lg bg-white rounded-lg flex justify-center items-center gap-y-5">
         <Image
           src="/image-product-desktop.jpg"
@@ -12,8 +27,12 @@ export default function ProductPreview() {
           className="rounded-l-lg w-[50%]"
         />
         <div className="mx-5 flex flex-col gap-2">
-          <h2 className="text-[0.5rem] tracking-widest text-[#979a9f]">PERFUME</h2>
-          <h1 className="font-bold text-xl/5 tracking-tight">Gabrielle Essence Eau De Parfum</h1>
+          <h2 className="text-[0.5rem] tracking-widest text-[#979a9f]">
+            PERFUME
+          </h2>
+          <h1 className={`font-bold text-xl/5 tracking-tight font-fraunces ${fraunces.className}`}>
+            Gabrielle Essence Eau De Parfum
+          </h1>
           <p>
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
@@ -23,7 +42,12 @@ export default function ProductPreview() {
             <p className="line-through">$169.99</p>
           </div>
           <button className="bg-[#3f8169] text-white flex justify-center items-center gap-3 py-2 rounded-md">
-            <Image src='/icon-cart.svg' alt='cart icon' width={20} height={20}/>
+            <Image
+              src="/icon-cart.svg"
+              alt="cart icon"
+              width={20}
+              height={20}
+            />
             <span>Add to Cart</span>
           </button>
         </div>
