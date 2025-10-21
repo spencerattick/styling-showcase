@@ -13,22 +13,22 @@ const fraunces = Fraunces({
 
 export default function ProductPreview() {
   return (
-    <div
-      className='flex justify-center items-center w-screen h-screen bg-[#f3ebe3]'
-    >
-      <div className="max-w-md lg:max-w-lg h-92 bg-white rounded-lg flex justify-center items-center">
+    <div className="flex justify-center items-center w-screen h-screen bg-[#f3ebe3]">
+      <div className="max-w-sm h-[70%] md:max-w-md lg:max-w-lg md:h-92 bg-white rounded-lg flex md:flex-row flex-col justify-center items-center">
         <Image
           src="/image-product-desktop.jpg"
           alt="perfume bottle"
           width={300}
           height={300}
-          className="rounded-l-lg w-[50%] h-full"
+          className="md:rounded-l-lg rounded-t-lg md:w-[50%] md:h-full w-full h-[50%] object-cover"
         />
         <div className="px-5 flex flex-col h-full gap-4 lg:gap-6 justify-center">
           <h2 className="text-[0.6rem] tracking-[0.3rem] text-[#979a9f]">
             PERFUME
           </h2>
-          <h1 className={`font-bold text-2xl/6 tracking-tight font-fraunces ${fraunces.className} mr-5`}>
+          <h1
+            className={`font-bold text-2xl/6 tracking-tight font-fraunces ${fraunces.className} mr-5`}
+          >
             Gabrielle Essence Eau De Parfum
           </h1>
           <p className={`${montserrat.className} text-sm text-[#6c7289]`}>
@@ -36,10 +36,14 @@ export default function ProductPreview() {
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
           <div className="flex gap-5 items-center">
-            <h1 className={`text-[#3f8169] text-2xl font-bold ${fraunces.className}`}>$149.99</h1>
+            <h1
+              className={`text-[#3f8169] text-2xl font-bold ${fraunces.className}`}
+            >
+              $149.99
+            </h1>
             <p className="line-through">$169.99</p>
           </div>
-          <button className="bg-[#3f8169] text-white flex justify-center items-center gap-3 py-2 rounded-md mb-4">
+          <button className="bg-[#3f8169] text-white flex justify-center items-center gap-3 py-2 rounded-md mb-4 hover:bg-[#16240e] transition-all duration-200">
             <Image
               src="/icon-cart.svg"
               alt="cart icon"
