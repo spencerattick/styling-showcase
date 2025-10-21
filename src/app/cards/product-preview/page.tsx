@@ -20,7 +20,7 @@ export default function ProductPreview() {
           alt="perfume bottle"
           width={300}
           height={300}
-          className="md:rounded-l-lg rounded-t-lg md:w-[50%] md:h-full w-full h-[50%] object-cover"
+          className="rounded-t-lg md:rounded-none md:rounded-l-lg md:w-[50%] md:h-full w-full h-[50%] object-cover"
         />
         <div className="px-5 flex flex-col h-full gap-4 lg:gap-6 justify-center">
           <h2 className="text-[0.6rem] tracking-[0.3rem] text-[#979a9f]">
