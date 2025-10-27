@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="fixed top-0 left-0 w-screen h-screen -z-10 bg-red-500">
+      <div className="fixed top-0 left-0 w-screen h-screen -z-10">
         <Iridescence
           color={[1, 1, 1]}
           mouseReact={false}

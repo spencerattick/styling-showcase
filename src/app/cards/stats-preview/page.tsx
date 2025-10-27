@@ -9,8 +9,8 @@ export default function StatsPreview() {
   ];
   return (
     <div className="bg-[#0a0b1b] w-screen h-screen flex justify-center items-center">
-      <div className="max-w-6xl m-5 min-h-2/5 bg-[#1b1938] flex rounded-md">
-        <div className="p-15 flex flex-col gap-4 text-white">
+      <div className="max-w-6xl m-5 md:min-h-2/5 max-h-3/4 bg-[#1b1938] flex md:flex-row flex-col-reverse justify-center rounded-md border border-amber-500">
+        <div className="p-15 flex flex-col gap-4 text-white items-center text-center md:text-left md:items-start">
           <h1 className="font-bold text-3xl">
             Get <span className="text-[#a25dd0]">insights</span> that help your
             business grow.
@@ -19,7 +19,7 @@ export default function StatsPreview() {
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-          <div className="flex gap-10 mt-auto">
+          <div className="flex flex-col md:flex-row gap-10 mt-auto">
             {stats.map((stat, index) => (
               <div key={index}>
                 <h2 className="font-semibold text-2xl">{stat.value}</h2>
@@ -28,11 +28,11 @@ export default function StatsPreview() {
             ))}
           </div>
         </div>
-        <div className="bg-[#a25dd0] min-w-[50%] rounded-r-md">
+        <div className="bg-[#a25dd0] min-w-[50%] max-h-[20%] rounded-t-md md:rounded-none md:rounded-r-md ">
           <Image
             src="/image-header-desktop.jpg"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
             alt="people working at their laptops"
             className="object-cover mix-blend-multiply h-full w-full"
           />
