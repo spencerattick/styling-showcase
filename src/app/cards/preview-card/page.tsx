@@ -13,46 +13,47 @@ export default function PreviewCard() {
       title: "Sedans",
       description:
         "Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.",
-      imageUrl: "/images/icon-sedans.svg",
+      imageUrl: "/icon-sedans.svg",
       bgColor: "#e28525",
     },
     {
       title: "SUVs",
       description:
         "Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.",
-      imageUrl: "/images/icon-suvs.svg",
+      imageUrl: "/icon-suvs.svg",
       bgColor: "#006971",
     },
     {
       title: "Luxury",
       description:
         "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.",
-      imageUrl: "/images/icon-luxury.svg",
+      imageUrl: "/icon-luxury.svg",
       bgColor: "#00403f",
     },
   ];
   return (
-    <div className="min-w-sm flex justify-center items-center border h-screen w-screen rounded">
-      {cardData.map((card, index) => (
-        <SinglePreview key={index} card={card}/>
-      ))}
+    <div className="flex justify-center items-center h-screen w-screen">
+      <div className="flex min-w-md border rounded">
+        {cardData.map((card, index) => (
+          <SinglePreview key={index} card={card} />
+        ))}
+      </div>
     </div>
   );
 }
 
 type SinglePreviewProps = {
-    card: CardData;
-  };
+  card: CardData;
+};
 
 function SinglePreview({ card }: SinglePreviewProps) {
   return (
-    <div className={`bg-[${card.bgColor}]} bg-blue-300 h-90 w-20`}>
+    <div className={`bg-[${card.bgColor}] w-60 p-10 text-white flex flex-col gap-6`}>
       <div>
-        <div>{card.title}</div>
-        <Image></Image>
-      </div>
-      <h1></h1>
-      <p></p>
+        <Image src={card.imageUrl} width={50} height={50} alt="car icon"></Image>
+      </div> 
+      <h1 className="font-bold text-xl">{card.title}</h1>
+      <p>{card.description}</p>
       <button>Learn More</button>
     </div>
   );
