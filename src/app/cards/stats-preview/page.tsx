@@ -1,4 +1,3 @@
-import { div } from "motion/react-client";
 import Image from "next/image";
 
 export default function StatsPreview() {
@@ -9,17 +8,17 @@ export default function StatsPreview() {
   ];
   return (
     <div className="bg-[#0a0b1b] w-screen h-screen flex justify-center items-center">
-      <div className="max-w-6xl m-5 md:min-h-2/5 max-h-3/4 bg-[#1b1938] flex md:flex-row flex-col-reverse justify-center rounded-md border border-amber-500">
-        <div className="p-15 flex flex-col gap-4 text-white items-center text-center md:text-left md:items-start">
+      <div className="max-w-6xl m-5 sm:min-h-2/5 max-h-3/4 bg-[#1b1938] flex sm:flex-row flex-col-reverse justify-center rounded-md">
+        <div className="p-8 sm:p-15 flex flex-col gap-4 text-white items-center text-center sm:text-left sm:items-start">
           <h1 className="font-bold text-3xl">
             Get <span className="text-[#a25dd0]">insights</span> that help your
             business grow.
           </h1>
-          <p className="text-[#a4a2bc] text-sm">
+          <p className="text-[#a4a2bc] sm:text-sm">
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-          <div className="flex flex-col md:flex-row gap-10 mt-auto">
+          <div className="flex flex-col sm:flex-row gap-10 mt-auto">
             {stats.map((stat, index) => (
               <div key={index}>
                 <h2 className="font-semibold text-2xl">{stat.value}</h2>
@@ -28,7 +27,7 @@ export default function StatsPreview() {
             ))}
           </div>
         </div>
-        <div className="bg-[#a25dd0] min-w-[50%] max-h-[20%] rounded-t-md md:rounded-none md:rounded-r-md ">
+        <div className="bg-[#a25dd0] sm:min-w-[50%] sm:max-h-[20%] rounded-t-md sm:rounded-none sm:rounded-r-md overflow-hidden">
           <Image
             src="/image-header-desktop.jpg"
             width={100}
