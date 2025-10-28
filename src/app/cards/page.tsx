@@ -39,6 +39,11 @@ export default function CardsPage() {
       name: "Product Preview",
       link: "/cards/product-preview",
       previewImage: "/preview/product-preview.png",
+    },
+    {
+      name: "Stats Preview",
+      link: "/cards/stats-preview",
+      previewImage: "/preview/stats-preview.png",
     }
   ];
   return (
