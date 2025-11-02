@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Big_Shoulders } from "next/font/google";
+
+const bigShoulders = Big_Shoulders({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 type CardData = {
   title: string;
@@ -47,10 +53,9 @@ type SinglePreviewProps = {
 };
 
 function SinglePreview({ card }: SinglePreviewProps) {
-  console.log("COLOR: ", `bg-[${card.bgColor}]`);
   return (
     <div
-      className="w-60 p-10 text-white flex flex-col gap-6"
+      className="w-60 p-10 text-white flex flex-col gap-9"
       style={{ background: card.bgColor }}
     >
       <div>
@@ -61,9 +66,12 @@ function SinglePreview({ card }: SinglePreviewProps) {
           alt="car icon"
         ></Image>
       </div>
-      <h1 className="font-bold text-xl">{card.title}</h1>
-      <p>{card.description}</p>
-      <button className={`text-[${card.bgColor}] bg-white p-2 rounded-full`} style={{ color: card.bgColor }}>
+      <h1 className={`${bigShoulders.className} font-bold text-xl`}>{card.title}</h1>
+      <p className="text-sm">{card.description}</p>
+      <button
+        className={`text-[${card.bgColor}] bg-white p-2 rounded-full`}
+        style={{ color: card.bgColor }}
+      >
         Learn More
       </button>
     </div>
