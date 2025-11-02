@@ -47,14 +47,25 @@ type SinglePreviewProps = {
 };
 
 function SinglePreview({ card }: SinglePreviewProps) {
+  console.log("COLOR: ", `bg-[${card.bgColor}]`);
   return (
-    <div className={`bg-[${card.bgColor}] w-60 p-10 text-white flex flex-col gap-6`}>
+    <div
+      className="w-60 p-10 text-white flex flex-col gap-6"
+      style={{ background: card.bgColor }}
+    >
       <div>
-        <Image src={card.imageUrl} width={50} height={50} alt="car icon"></Image>
-      </div> 
+        <Image
+          src={card.imageUrl}
+          width={50}
+          height={50}
+          alt="car icon"
+        ></Image>
+      </div>
       <h1 className="font-bold text-xl">{card.title}</h1>
       <p>{card.description}</p>
-      <button>Learn More</button>
+      <button className={`text-[${card.bgColor}] bg-white p-2 rounded-full`} style={{ color: card.bgColor }}>
+        Learn More
+      </button>
     </div>
   );
 }
