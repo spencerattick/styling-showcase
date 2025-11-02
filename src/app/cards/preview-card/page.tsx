@@ -66,7 +66,7 @@ function SinglePreview({ card }: SinglePreviewProps) {
           alt="car icon"
         ></Image>
       </div>
-      <h1 className={`${bigShoulders.className} font-bold text-xl`}>{card.title}</h1>
+      <h1 className={`${bigShoulders.className} font-bold text-3xl uppercase`}>{card.title}</h1>
       <p className="text-sm">{card.description}</p>
       <button
         className={`text-[${card.bgColor}] bg-white p-2 rounded-full`}
