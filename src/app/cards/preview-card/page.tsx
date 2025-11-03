@@ -38,8 +38,8 @@ export default function PreviewCard() {
     },
   ];
   return (
-    <div className="flex justify-center items-center h-screen w-screen">
-      <div className="flex min-w-md">
+    <div className="flex justify-center items-center min-h-screen w-screen">
+      <div className="flex sm:flex-row flex-col justify-center items-center sm:min-w-md w-screen my-8">
         {cardData.map((card, index) => (
           <SinglePreview key={index} card={card} />
         ))}
@@ -55,14 +55,14 @@ type SinglePreviewProps = {
 function SinglePreview({ card }: SinglePreviewProps) {
   return (
     <div
-      className="w-60 p-10 text-white flex flex-col gap-9 first:rounded-tl-md first:rounded-bl-md last:rounded-tr-md last:rounded-br-md"
+      className="sm:w-60 w-[80%] p-10 text-white flex flex-col gap-9 sm:first:rounded-tl-md sm:first:rounded-bl-md sm:last:rounded-tr-md sm:last:rounded-br-md first:rounded-t-md last:rounded-b-md"
       style={{ background: card.bgColor }}
     >
       <div>
         <Image
           src={card.imageUrl}
-          width={50}
-          height={50}
+          width={60}
+          height={60}
           alt="car icon"
         ></Image>
       </div>
@@ -71,7 +71,7 @@ function SinglePreview({ card }: SinglePreviewProps) {
       </h1>
       <p className="text-sm">{card.description}</p>
       <button
-        className=" bg-white py-3 rounded-full mt-10 text-xs w-2/3"
+        className=" bg-white py-3 rounded-full mt-10 text-xs sm:w-2/3 w-1/2"
         style={{ color: card.bgColor }}
       >
         Learn More
