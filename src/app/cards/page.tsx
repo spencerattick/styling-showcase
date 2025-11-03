@@ -44,7 +44,12 @@ export default function CardsPage() {
       name: "Stats Preview",
       link: "/cards/stats-preview",
       previewImage: "/preview/stats-preview.png",
-    }
+    },
+    {
+      name: "Preview Card",
+      link: "/cards/preview-card",
+      previewImage: "/preview/preview-card.png",
+    },
   ];
   return (
     <div className="min-h-screen bg-black pb-20 text-center">
