@@ -55,7 +55,11 @@ type SinglePreviewProps = {
 function SinglePreview({ card }: SinglePreviewProps) {
   return (
     <div
-      className="sm:w-60 w-[80%] p-10 text-white flex flex-col gap-9 sm:first:rounded-tl-md sm:first:rounded-bl-md sm:last:rounded-tr-md sm:last:rounded-br-md first:rounded-t-md last:rounded-b-md"
+      className="sm:w-60 w-[80%] p-10 text-white flex flex-col gap-9 
+      sm:first:rounded-tr-none
+      sm:first:rounded-tl-md sm:first:rounded-bl-md sm:last:rounded-tr-md sm:last:rounded-br-md 
+      sm:last:rounded-bl-none
+      first:rounded-t-md last:rounded-b-md"
       style={{ background: card.bgColor }}
     >
       <div>
