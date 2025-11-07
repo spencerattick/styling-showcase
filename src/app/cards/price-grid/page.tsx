@@ -6,22 +6,20 @@ export default function PriceGrid() {
       <div className="max-w-xl grid grid-cols-2 rounded-lg shadow-xl bg-white">
         <div className="col-span-2 p-8">
           <h1 className="mb-3 text-[#6abfb9] font-bold text-lg">Join our community</h1>
-          <h2 className="text-[#c0e033] font-bold mb-2">30-day, hassle-free money back gaurantee</h2>
+          <h2 className="text-[#c0e033] font-semibold mb-2">30-day, hassle-free money back gaurantee</h2>
           <p className="text-sm text-[#c0c1c6]">
             Gain access to our full library of tutorials along with expert code
             reviews. Perfect for any developers who are serious about honing
             their skills.
           </p>
         </div>
-        <div className="p-8 text-white bg-[#2ab3b1]">
-          <div>
-            <h2>Monthly Subscription</h2>
-            <h1>
-              $29 <span>per month</span>
+        <div className="p-8 text-white bg-[#2ab3b1] flex-col justify-start">
+            <h2 className="font-semibold mb-3">Monthly Subscription</h2>
+            <h1 className='text-3xl font-semibold'>
+              $29 <span className="text-sm font-thin">per month</span>
             </h1>
             <p>Full access for less than $1 a day</p>
-            <button>Sign Up</button>
-          </div>
+            <button className="px-15 py-3 bg-[#c0e033] text-white rounded-lg text-sm shadow-xl">Sign Up</button>
         </div>
         <div className="border col-start-2 col-end-3 p-8">
           <h2>Why Us</h2>
