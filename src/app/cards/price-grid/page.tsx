@@ -3,10 +3,14 @@ import React from "react";
 export default function PriceGrid() {
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-[#e6eff6]">
-      <div className="max-w-xl grid grid-cols-2 rounded-lg shadow-xl bg-white">
+      <div className="max-w-2xl grid grid-cols-2 rounded-lg shadow-xl bg-white">
         <div className="col-span-2 p-8">
-          <h1 className="mb-3 text-[#6abfb9] font-bold text-lg">Join our community</h1>
-          <h2 className="text-[#c0e033] font-semibold mb-2">30-day, hassle-free money back gaurantee</h2>
+          <h1 className="mb-3 text-[#6abfb9] font-bold text-lg">
+            Join our community
+          </h1>
+          <h2 className="text-[#c0e033] font-semibold mb-2">
+            30-day, hassle-free money back gaurantee
+          </h2>
           <p className="text-sm text-[#c0c1c6]">
             Gain access to our full library of tutorials along with expert code
             reviews. Perfect for any developers who are serious about honing
@@ -14,16 +18,20 @@ export default function PriceGrid() {
           </p>
         </div>
         <div className="p-8 text-white bg-[#2ab3b1] flex-col justify-start">
-            <h2 className="font-semibold mb-3">Monthly Subscription</h2>
-            <h1 className='text-3xl font-semibold'>
-              $29 <span className="text-sm font-thin">per month</span>
-            </h1>
-            <p>Full access for less than $1 a day</p>
-            <button className="px-15 py-3 bg-[#c0e033] text-white rounded-lg text-sm shadow-xl">Sign Up</button>
+          <h2 className="font-semibold mb-3">Monthly Subscription</h2>
+          <h1 className="text-3xl font-semibold">
+            $29 <span className="text-sm font-thin">per month</span>
+          </h1>
+          <p>Full access for less than $1 a day</p>
+          <div className="flex justify-center mt-6">
+            <button className="px-25 py-3 bg-[#c0e033] text-white rounded-md text-sm shadow-xl">
+              Sign Up
+            </button>
+          </div>
         </div>
-        <div className="border col-start-2 col-end-3 p-8">
-          <h2>Why Us</h2>
-          <ul>
+        <div className="col-start-2 col-end-3 p-8 bg-[#49bebd] text-white">
+          <h2 className="font-semibold mb-3">Why Us</h2>
+          <ul className="text-sm font-light">
             <li>Tutorials by industry experts</li>
             <li>Peer & expert code review</li>
             <li>Coding exercises</li>
