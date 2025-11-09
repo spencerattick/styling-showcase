@@ -17,7 +17,7 @@ export default function PriceGrid() {
             their skills.
           </p>
         </div>
-        <div className="p-8 text-white bg-[#2ab3b1] flex-col justify-start">
+        <div className="p-8 text-white bg-[#2ab3b1] flex-col justify-start rounded-bl-lg">
           <h2 className="font-semibold mb-3">Monthly Subscription</h2>
           <h1 className="text-3xl font-semibold">
             $29 <span className="text-sm font-thin">per month</span>
@@ -29,7 +29,7 @@ export default function PriceGrid() {
             </button>
           </div>
         </div>
-        <div className="col-start-2 col-end-3 p-8 bg-[#49bebd] text-white">
+        <div className="col-start-2 col-end-3 p-8 bg-[#49bebd] text-white rounded-br-lg">
           <h2 className="font-semibold mb-3">Why Us</h2>
           <ul className="text-sm font-light">
             <li>Tutorials by industry experts</li>
