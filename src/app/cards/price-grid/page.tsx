@@ -9,7 +9,7 @@ export default function PriceGrid() {
             Join our community
           </h1>
           <h2 className="text-[#c0e033] font-semibold mb-2">
-            30-day, hassle-free money back gaurantee
+            30-day hassle-free money back gaurantee
           </h2>
           <p className="text-sm text-[#c0c1c6]">
             Gain access to our full library of tutorials along with expert code
