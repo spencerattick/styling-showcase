@@ -24,7 +24,7 @@ export default function PriceGrid() {
           </h1>
           <p>Full access for less than $1 a day</p>
           <div className="flex justify-center mt-6">
-            <button className="px-25 py-3 bg-[#c0e033] text-white rounded-md text-sm shadow-xl">
+            <button className="px-25 py-3 bg-[#c0e033] text-white rounded-md text-sm shadow-xl hover:cursor-pointer hover:opacity-90 transition-all duration-300">
               Sign Up
             </button>
           </div>
