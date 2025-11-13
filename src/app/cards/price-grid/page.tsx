@@ -19,8 +19,8 @@ export default function PriceGrid() {
         </div>
         <div className="p-8 text-white bg-[#2ab3b1] flex-col justify-start sm:rounded-bl-lg rounded-bl-none">
           <h2 className="font-semibold mb-3">Monthly Subscription</h2>
-          <h1 className="text-3xl font-semibold">
-            $29 <span className="text-sm font-thin">per month</span>
+          <h1 className="text-3xl font-semibold flex items-center">
+            $29 <span className="text-sm font-thin ml-2">per month</span>
           </h1>
           <p>Full access for less than $1 a day</p>
           <div className="flex justify-center mt-6">
